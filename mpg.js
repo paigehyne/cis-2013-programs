@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<head>
-   <meta charset="UTF-8">
-   <title>Calculate Age</title>
-   <script src="days.js">
-   </script>
-</head>
-<body>
-   <section>
-        <h1>That's all folks!</h1>
-   </section>
-</body>
+ var floatMiles, floatGallons, floatMpg;
+     floatMiles = parseFloat(prompt("Enter miles driven"));
+     floatGallons = parseFloat(prompt("Enter gallons of gas used"));
+     floatMpg = floatMiles/floatGallons;
+     alert("Miles per gallon = " + floatMpg);
