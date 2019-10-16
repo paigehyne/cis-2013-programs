@@ -6,9 +6,9 @@ var $ = function (id)
 var calculateIncome = function () 
 {
     var floatAnnualIncome = parseFloat($("annualIncome").value);
-    var intUserAge = parseInt($("age").value);
+    var intAge = parseInt($("age").value);
     var floatTaxRate, floatAnnualTax;
-    if (intUserAge >= 65)
+    if (intAge >= 65)
     {
     	if (floatAnnualIncome <= 30000)
     	{
@@ -47,7 +47,7 @@ var calculateIncome = function ()
 
 	floatAnnualTax = floatAnnualIncome * (floatTaxRate/100);
 
-	$("annualTax").value = floatAnnunalTax;
+	$("annualTax").value = floatAnnualTax;
 
 
 	alert ("Your annual income tax this year is $" + floatAnnualTax  +"\nBased upon an annual income of $"+ floatAnnualIncome+
