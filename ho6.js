@@ -26,7 +26,6 @@ var fixPrinter = function()
     var boolRecognised = $("not_recognised").selected;  ////returns a value of true only when the not_recognized html id is selected from the dropdown menu
 
     //enter your code here and don't forget to send the output to the DOM
-{
     if(boolPrinting === true)
     {
         if(boolRedLight === true)
@@ -40,19 +39,23 @@ var fixPrinter = function()
                 (stringOutput = stringMessage4 + "\n" + stringMessage5);
             }
         }
-    } 
     else
-    if(boolRecognised === true)
-    {
-        (stringOutput = stringMessage1 + "\n" + stringMessage2 + "\n" + stringMessage3);
-    }
-    else
-    {
-        (stringOutput = stringMessage5);
-    }
-    if(boolRedLight === true)
     {
         if(boolRecognised === true)
+        {
+            (stringOutput = stringMessage1 + "\n" + stringMessage2 + "\n" + stringMessage3);
+        }
+        else
+        {
+        (stringOutput = stringMessage5);
+        }
+    }
+    
+    else
+    {
+        if(boolRedLight === true)
+        {
+            if(boolRecognised === true)
         {
             (stringOutput = stringMessage3 + "\n" + stringMessage4);
         }
@@ -62,17 +65,20 @@ var fixPrinter = function()
         }
     }
     else
-    if(boolRecognised === true)
     {
-        (stringOutput = stringMessage3);
-    }
-    else
+        if(boolRecognised === true)
+        {
+            (stringOutput = stringMessage3);
+        }
+        else
         {
             (stringOutput = stringMessage6);
         }
+    }    
 }
 
 $("output").value = stringOutput;
+
 };
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
