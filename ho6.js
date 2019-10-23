@@ -40,7 +40,7 @@ var fixPrinter = function()
             }
         }
     else
-    {
+
         if(boolRecognised === true)
         {
             (stringOutput = stringMessage1 + "\n" + stringMessage2 + "\n" + stringMessage3);
@@ -49,10 +49,10 @@ var fixPrinter = function()
         {
         (stringOutput = stringMessage5);
         }
-    }
     
+    }
     else
-    {
+
         if(boolRedLight === true)
         {
             if(boolRecognised === true)
@@ -63,7 +63,7 @@ var fixPrinter = function()
         {
             (stringOutput = stringMessage4);
         }
-    }
+        }
     else
     {
         if(boolRecognised === true)
@@ -74,11 +74,9 @@ var fixPrinter = function()
         {
             (stringOutput = stringMessage6);
         }
-    }    
-}
 
 $("output").value = stringOutput;
-
+    }
 };
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
