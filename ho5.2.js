@@ -23,7 +23,7 @@ if (intGradeOption===1)
         }
 }
     else
-
+{
         if (floatTotalPts >=90)
         {
             (stringFinalGrade = "A");
@@ -32,9 +32,9 @@ if (intGradeOption===1)
             {
              if (floatTotalPts >= 80  && floatTotalPts<90)
             {
-                 stringFinalGrade = "B";
+                 (stringFinalGrade = "B");
             }
-            }
+        
         
         else
             {
@@ -55,7 +55,8 @@ if (intGradeOption===1)
             }
         }
     }
-
+    }
+    }
 
 $("final_grade").value = stringFinalGrade;
 
