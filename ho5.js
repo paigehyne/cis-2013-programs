@@ -42,7 +42,6 @@ if (intGradeOption===1)
             {
                  (stringFinalGrade = "B");
             }
-        }
         
         else
             {
@@ -64,7 +63,7 @@ if (intGradeOption===1)
         }
     }
     }
-
+}
 
 alert("Your final grade is: " + stringFinalGrade); 
 
