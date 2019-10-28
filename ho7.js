@@ -111,10 +111,10 @@ var calcTriArea = function ()
    alert("The Triangle area is " + triArea(floatTriSide1, floatTriSide2, floatTriSide3));
 };
 
-function triArea(floatTriSide1_par, floatTriSide2_par, floatTriSide3_par, floatS_par)
+function triArea(floatTriSide1_par, floatTriSide2_par, floatTriSide3_par)
 {
 	var floatS = parseFloat((floatTriSide1_par + floatTriSide2_par + floatTriSide3_par)/2);
-   var floatTriArea = Math.sqrt((floatS_par*(floatS_par-floatTriSide1_par)*(floatS_par-floatTriSide2_par)*(floatS_par-floatTriSide3_par)));
+   var floatTriArea = Math.sqrt((floatS*(floatS-floatTriSide1_par)*(floatS-floatTriSide2_par)*(floatS-floatTriSide3_par)));
    return floatTriArea.toFixed(2);
 }
 
