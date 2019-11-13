@@ -12,7 +12,7 @@ while(isNaN(intMin)||intMin <0){
 
 //this section requests the highest number for the guessing range and rejects the input if it does not meet the criteria requested
 //if the number is not two more than zero or not a real number the program will not work
-intMax = parseInt(prompt("Choose the highest number in your guessing range (must be at least 2 more than zero"));
+intMax = parseInt(prompt("Choose the highest number in your guessing range (must be at least 2 more than zero)"));
 while(isNaN(intMax)||intMax <=2) {
 intMax = parseFloat(prompt("Please enter a valid number"));
 
