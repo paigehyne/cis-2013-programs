@@ -23,15 +23,15 @@ stringOutput = "Your password needs to be 8 or more chracters.";
    {
       if (stringPassword === arrayBadPasswords[i])
       {
-         stringOutput = "The password is invalid. Please try a different one.";
-         break;
-      }
+       if (stringPassword >=8 && stringOutput != "The password is invalid. Please try a different one.");
+        {
+        stringOutput = "That's correct!";
+        }
       }
    }
- stringOutput = "That's correct!";
+ }
  $("output").value = stringOutput;
 };
-
 window.onload = function () 
 {
    $("password").value = "";
